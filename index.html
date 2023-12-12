@@ -37,7 +37,7 @@
       aid: 'aid|8cc427b2-63e8-495e-8c00-067523fe5ef6',
       cid: '3d2bb8e1-e005-4807-8612-694b2f4cc575',
       playerVersion: '3.82.31354.0',
-      publishTimestamp: '2023-12-12T12:09:52.1331620Z',
+      publishTimestamp: '2023-12-12T21:38:07.0286354Z',
       maxIosVideoElements: 10,
       connectionSettings: { message: 'You%20are%20offline.%20Trying%20to%20reconnect...', useDarkTheme: false, mode: 'disabled' },
 
@@ -452,18 +452,16 @@
       document.querySelector('.mobile-load-title-overlay').style.display = 'none';
     }
   </script>
-  
-<script>
-  document.addEventListener('click', musicPlay);
-  function musicPlay() {
+  <script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
       document.getElementById('IDIDIDID').play();
       document.removeEventListener('click', musicPlay);
-  }
-</script>
-  
+    }
+  </script>
 
   <link rel="stylesheet" href="html5/data/css/output.min.css" data-noprefix/>
-  <audio id="IDIDIDID" autoplay ><source src="audio.mp3" type="audio/mp3"></audio>
+  <audio id="IDIDIDID" autoplay loop><source src="audio.mp3" type="audio/mp3"></audio>
 </body>
 <script src="html5/lib/scripts/bootstrapper.min.js"></script>
 </html>
