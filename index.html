@@ -453,7 +453,14 @@
     }
   </script>
 
-  
+<script>
+  document.addEventListener('click', musicPlay);
+  function musicPlay() {
+    document.getElementById('IDIDIDID').play();
+    document.removeEventListener('click', musicPlay);
+  }
+</script>
+<audio id="IDIDIDID" autoplay loop><source src="audio.mp3" type="audio/mp3"></audio>
 
   <link rel="stylesheet" href="html5/data/css/output.min.css" data-noprefix/>
 </body>
